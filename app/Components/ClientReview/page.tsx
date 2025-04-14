@@ -3,13 +3,13 @@ import ClientReviewCard from './ClientReviewCard'
 
 const ClientReview = () => {
   return (
-    <div  id="clientReview" className="pt-16 pb-16 bg-gray-100">
+    <div  id="clientReview" className="pt-16 pb-16 bg-gray-100 dark:bg-gray-900">
         {/* Heading */}
-        <h1 className="text-center trxt-2xl text-blue-950 font-bold">
-            What Our Happy User Says
+        <h1 className="text-center text-2xl text-blue-950 font-bold dark:text-gray-300">
+            What Our Happy Users Say
         </h1>
         {/* Sub heading */}
-        <p className="mt-3 text-center font-medium text-gray-700 w-[90%] mx-auto sm:w-[70%] ms:w-[50%]">
+        <p className="mt-3 text-center font-medium text-gray-700 w-[90%] mx-auto sm:w-[70%] ms:w-[50%] dark:text-white">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates soluta laudantium accusamus voluptatibus ab quia cumque perspiciatis, odit perferendis commodi cum, laboriosam maxime assumenda placeat impedit sint nam? Possimus, quis.
         </p>
         {/* grid */}
@@ -19,7 +19,7 @@ const ClientReview = () => {
                 data-aos-anchor-placement="top-center" 
             >
                 <ClientReviewCard 
-                    image="/images/u1.jpg"
+                    image="/images/user6.svg"
                     name="Jasica Doe"
                     rating="4.7" />
             </div>
@@ -29,7 +29,7 @@ const ClientReview = () => {
                 data-aos-delay="100"
             >
                 <ClientReviewCard 
-                    image="/images/u2.jpg"
+                    image="/images/user7.svg"
                     name="John Doe"
                     rating="4.5" />
             </div>
@@ -39,7 +39,7 @@ const ClientReview = () => {
                 data-aos-delay="200"
             >
                 <ClientReviewCard 
-                    image="/images/u3.jpg"
+                    image="/images/user8.svg"
                     name="Sasuke Uchiha"
                     rating="4.3" />
             </div>
@@ -49,7 +49,7 @@ const ClientReview = () => {
                 data-aos-delay="300"
              >
                 <ClientReviewCard 
-                    image="/images/u4.jpg"
+                    image="/images/user9.svg"
                     name="Boruto Uzumaki"
                     rating="4.9" />
             </div>

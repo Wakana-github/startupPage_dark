@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Rethink_Sans } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 import ResponsiveNav from "./Components/Navbar/ResponsiveNav";
 import Footer from "./Components/Footer/page";
 import ScrollToTop from "./Components/Helper/ScrollToTop";
@@ -22,14 +23,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${font.className} antialiased`}
-      >
-        <ResponsiveNav />
-        {children}
-        <Footer />
-        <ScrollToTop />
+      >   
+        <ThemeProvider attribute="class" enableSystem defaultTheme="system">
+          <ResponsiveNav />
+          {children}
+          <Footer />
+          <ScrollToTop />
+        </ThemeProvider>
       </body>
     </html>
   );

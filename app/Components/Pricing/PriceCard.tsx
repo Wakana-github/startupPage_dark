@@ -7,13 +7,13 @@ type Props ={
 
 const PriceCard = ({price, time}: Props) => {
   return (
-    <div className="bg-white rounded-lg p-8 relative border-t-4 border-rose-300">
-        <h1 className="text-sky-500 text-xl font-bold">{time} membership</h1>
-        <p className="mt-4 text-gray-600 font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ipsam nam similique sunt totam fugit minus.</p>
+    <div className="bg-white rounded-lg p-8 relative border-t-4 border-rose-300 dark:bg-gray-600">
+        <h1 className="text-sky-500 text-xl font-bold dark:text-sky-300">{time} membership</h1>
+        <p className="mt-4 text-gray-600 font-medium dark:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ipsam nam similique sunt totam fugit minus.</p>
         {/* {price} */}
         <div className="mt-8">
-            <div className="text-gray-700 font-semibold text-lg">
-                <p><span className="text-4xl font-bold text-black">${price}</span> / Month</p>
+            <div className="text-gray-700 font-semibold text-lg dark:text-white">
+                <p><span className="text-4xl font-bold text-black dark:text-white">${price}</span> / Month</p>
             </div>
         </div>
         {/* Button */}

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { GrTechnology } from 'react-icons/gr'
 import { navLinks } from './constant/constant'
 import { HiBars3BottomRight } from 'react-icons/hi2'
+import DarkToggle from '../Helper/DarlToggle';
  
 type Props = {
     openNav: ()=> void;
@@ -27,30 +28,31 @@ const Nav = ({openNav}:Props) => {
   return (
     <div className={`transition-all 
         ${navbg?"bg-white shadow-md":"fixed"}
-        duration-200 h-[12vh] z-[100] fixed w-full`}>
+        duration-200 h-[12vh] z-[100] fixed w-full  dark:bg-gray-600 dark:shadow-gray-300`}>
         <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}
             <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center flex-col">
+                <div className="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center flex-col dark:bg-blue-300">
                     <GrTechnology className="w-6 h-6 text-white" />
                 </div>
-                <h1 className="text-xl  md:text-2xl text-blue-800 font-bold">TechDev</h1>
+                <h1 className="text-xl hidden md:block md:text-2xl text-blue-800 font-bold dark:text-blue-300">TechStar</h1>
                 {/* NavLinks */}
                 <div className="hidden lg:flex items-center space-x-10 mx-3">
                     {navLinks.map((link) =>{
                         return (
                         <a href={link.url} 
                             key={link.id} 
-                            className="text-black hover:text-rose-500 font-semibol transition-all duration-200">
+                            className="text-black hover:text-rose-500 font-semibol transition-all duration-200 dark:text-white">
                             <p>{link.label}</p>
                         </a> 
                     );
                         
                     })}
                 </div>
+                
                 {/* button */}
-                <div className="flex items-center space-x-6 sm:space-x-12 ">
-                    <a href="#_" className="box-border relative z-30 inline-flex items-center justify-center w-auto px-3 py-1.5 sm:px-4 sm:py-2 overflow-hidden  text-xs sm:text-sm font-bold text-white transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none">
+                <div className="flex items-center space-x-6 sm:space-x-12 mx-2">
+                    <a href="#_" className="box-border relative z-30 inline-flex items-center justify-center w-auto px-2 py-1.5 sm:px-4 sm:py-2 overflow-hidden  text-xs sm:text-sm font-bold text-white transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none">
                     <span className="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
                     <span className="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
                     <span className="relative z-20 flex items-center text-sm">
@@ -59,6 +61,8 @@ const Nav = ({openNav}:Props) => {
                     </span>
                     </a>
                 </div>
+                {/* darkmode button */}
+                <DarkToggle />
                 {/* burger menu */}
                 <HiBars3BottomRight 
                     onClick={openNav} 

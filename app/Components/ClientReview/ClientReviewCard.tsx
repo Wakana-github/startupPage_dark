@@ -11,7 +11,7 @@ type Props ={
 
 const ClientReviewCard = ({image, name, rating}:Props) => {
   return (
-    <div className="bg-white shadow-md p-8 sm:flex items-center space-y-4 sm:space-y-0 space-x-6 rounded-lg">
+    <div className="bg-white shadow-md p-8 sm:flex items-center space-y-4 sm:space-y-0 space-x-6 rounded-lg dark:bg-gray-600">
         {/* image */}
         <div>
             <Image 
@@ -23,7 +23,7 @@ const ClientReviewCard = ({image, name, rating}:Props) => {
             />
         </div>
         <div>
-            <h1 className="text-lg font-bold text-blue-950">{name}</h1>
+            <h1 className="text-lg font-bold text-blue-950 dark:text-gray-300">{name}</h1>
             <div className="flex items-center space-x-3">
                 <p className="text-2xl font-bold text-orange-500">{rating}</p>
                 <div className="flex items-center ">
@@ -34,7 +34,7 @@ const ClientReviewCard = ({image, name, rating}:Props) => {
                     <BsStarHalf className="w-4 f-4 text-yellow-600" />
                 </div>
             </div>
-            <p className="mt-2 text-base text-gray-700 font-medium">
+            <p className="mt-2 text-base text-gray-700 font-medium dark:text-white">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima distinctio veritatis hic nostrum accusantium. Vel consectetur possimus quam esse nisi. 
             </p>
         </div>

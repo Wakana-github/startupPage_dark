@@ -3,9 +3,9 @@ import PriceCard from './PriceCard'
 
 const Pricing = () => {
   return (
-    <div id="pricing" className="pt-16 pb-16 bg-gray-100">
-        <h1 className="text-center text-2xl text-blue-950 font-bold">Choose The Plan That&apos;s Right For You</h1>
-        <p className="mt-3 text-center font-medium text-gray-700 w-[90%] sm:w-[70%] md:w-[50%] mx-auto">
+    <div id="pricing" className="pt-16 pb-16 bg-gray-100 dark:bg-gray-900">
+        <h1 className="text-center text-2xl text-blue-950 font-bold dark:text-gray-300">Choose The Plan That&apos;s Right For You</h1>
+        <p className="mt-3 text-center font-medium text-gray-700 w-[90%] sm:w-[70%] md:w-[50%] mx-auto dark:text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum deserunt eligendi nemo nostrum iusto voluptatem earum numquam.
         </p>
         <div className="w-[80%] mx-auto mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center">

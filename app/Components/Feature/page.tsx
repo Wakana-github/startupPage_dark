@@ -8,12 +8,12 @@ import { MdAccessAlarm, MdOutlineTouchApp } from 'react-icons/md'
 
 const Feature = () => {
   return (
-    <div id="feature" className="pt-16 pb-16 bg-gray-100">
+    <div id="feature" className="pt-16 pb-16 bg-gray-100 dark:bg-gray-900">
         <div>
-            <h1 className="text-center text-2xl text-blue-950 font-bold">
+            <h1 className="text-center text-2xl text-blue-950 font-bold dark:text-gray-300">
                 Key Features Of The Product
             </h1>
-            <p className='mt-3 text-center font-medium text-gray-700 w-[90%] mx-auto sm:w-[70%] md:w-[50%]'>
+            <p className='mt-3 text-center font-medium text-gray-700 w-[90%] mx-auto sm:w-[70%] md:w-[50%] dark:text-white'>
                 Our product stands out with its high pardeomance, delivering blazing-fast speeds and seamless multitasking.
             </p>
         </div>
@@ -25,18 +25,19 @@ const Feature = () => {
                 <div 
                     data-aos="fade-right" 
                     data-aos-anchor-placement="top-center" 
-                    className="bg-white p-4 rounded-lg"
+                    className="bg-white p-4 rounded-lg dark:bg-gray-600" 
+
                 >
-                    <div className="flex items-center space-x-3">
+                    <div className="flex items-center space-x-3 ">
                         {/* icon */}
                         <div className="w-12 h-12 rounded-3xl flex items-center justify-center flex-col bg-pink-500 bg-opacity-20">
                             <MdOutlineTouchApp className="w-6 h-6 text-orange-400"/>
                         </div>
                         {/* Heading */}
-                        <h1 className="text-lg font-bold text-gray-700">App Integration</h1>                       
+                        <h1 className="text-lg font-bold text-gray-700 dark:text-white">App Integration</h1>                       
                     </div>
                     {/* description */}
-                    <p className="mt-3 mb-3 text-gray-700 leading-relaxed">
+                    <p className="mt-3 mb-3 text-gray-700 leading-relaxed dark:text-white">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia suscipit nesciunt, debitis omnis fuga adipisci error amet obcaecati neque dolorem ad earum est? Distinctio ea exercitationem ad pariatur modi?
                     </p>
                 </div>
@@ -45,7 +46,7 @@ const Feature = () => {
                     data-aos="fade-right" 
                     data-aos-anchor-placement="top-center" 
                     data-aos-delay="100"
-                    className="bg-white p-4 rounded-lg"
+                    className="bg-white p-4 rounded-lg dark:bg-gray-600" 
                 >
                     <div className="flex items-center space-x-3">
                         {/* icon */}
@@ -53,10 +54,10 @@ const Feature = () => {
                             <GoWorkflow className="w-6 h-6 text-orange-400"/>
                         </div>
                         {/* Heading */}
-                        <h1 className="text-lg font-bold text-gray-700">Workflow Builder</h1>                       
+                        <h1 className="text-lg font-bold text-gray-700 dark:text-white">Workflow Builder</h1>                       
                     </div>
                     {/* description */}
-                    <p className="mt-3 mb-3 text-gray-700 leading-relaxed">
+                    <p className="mt-3 mb-3 text-gray-700 leading-relaxed dark:text-white">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia suscipit nesciunt, debitis omnis fuga adipisci error amet obcaecati neque dolorem ad earum est? Distinctio ea exercitationem ad pariatur modi?
                     </p>
                 </div>
@@ -65,7 +66,7 @@ const Feature = () => {
                     data-aos="fade-right" 
                     data-aos-anchor-placement="top-center" 
                     data-aos-delay="200"
-                    className="bg-white p-4 rounded-lg"
+                    className="bg-white p-4 rounded-lg dark:bg-gray-600"
                 >
                     <div className="flex items-center space-x-3">
                         {/* icon */}
@@ -73,10 +74,10 @@ const Feature = () => {
                             <LuPen className="w-6 h-6 text-orange-400"/>
                         </div>
                         {/* Heading */}
-                        <h1 className="text-lg font-bold text-gray-700">Problem Solution</h1>                       
+                        <h1 className="text-lg font-bold text-gray-700 dark:text-white">Problem Solution</h1>                       
                     </div>
                     {/* description */}
-                    <p className="mt-3 mb-3 text-gray-700 leading-relaxed">
+                    <p className="mt-3 mb-3 text-gray-700 leading-relaxed dark:text-white">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia suscipit nesciunt, debitis omnis fuga adipisci error amet obcaecati neque dolorem ad earum est? Distinctio ea exercitationem ad pariatur modi?
                     </p>
                 </div>
@@ -85,7 +86,7 @@ const Feature = () => {
                     data-aos="fade-right" 
                     data-aos-anchor-placement="top-center" 
                     data-aos-delay="300" 
-                    className="bg-white p-4 rounded-lg"
+                    className="bg-white p-4 rounded-lg dark:bg-gray-600"
                 >
                     <div className="flex items-center space-x-3">
                         {/* icon */}
@@ -93,10 +94,10 @@ const Feature = () => {
                             <MdAccessAlarm className="w-6 h-6 text-orange-400"/>
                         </div>
                         {/* Heading */}
-                        <h1 className="text-lg font-bold text-gray-700">Lifetime Access</h1>                       
+                        <h1 className="text-lg font-bold text-gray-700 dark:text-white">Lifetime Access</h1>                       
                     </div>
                     {/* description */}
-                    <p className="mt-3 mb-3 text-gray-700 leading-relaxed">
+                    <p className="mt-3 mb-3 text-gray-700 leading-relaxed dark:text-white">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia suscipit nesciunt, debitis omnis fuga adipisci error amet obcaecati neque dolorem ad earum est? Distinctio ea exercitationem ad pariatur modi?
                     </p>
                 </div>
@@ -106,8 +107,9 @@ const Feature = () => {
                 data-aos="fade-left" 
                 data-aos-anchor-placement="top-center" 
                 data-aos-delay="400"
+                className="pl-15"
             >
-                <Image src="/images/f1.png" alt="feature" width={700} height={700}/>
+                <Image src="/images/web-devices.svg" alt="feature" width={450} height={450} />
             </div>
         </div>
     </div>
