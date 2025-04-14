@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react'
 import { GrTechnology } from 'react-icons/gr'
 import { navLinks } from './constant/constant'
-import Link from 'next/link'
 import { HiBars3BottomRight } from 'react-icons/hi2'
  
 type Props = {
