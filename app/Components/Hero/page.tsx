@@ -7,13 +7,13 @@ import Btn_green from './Btn_green';
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-[110vh] sm:h-screen bg-[url('/images/bg.png')] bg-cover bg-center flex justify-center flex-col">
+    <div id="hero" className="relative w-full h-[100vh] sm:h-screen bg-[url('/images/bg.png')] bg-cover bg-center flex justify-center flex-col">
         <div className="w-[90%] md:w-[80%] mx-auto items-center grid grid-cols-1 xl:grid-cols-2 gap-10">
             
                 {/* Text Content */}
                 <div data-aos="fade-up">
                     <p className="text-sm sm:text-base md:text-xl font-bold text-blue-950">
-                        Make the Smartest Incestment
+                        Make the Smartest Investment
                     </p>
                     <h1 className="text-2xl md:text-3xl lg:text-4xl mt-6 mb-6 font-bold text-blue-950 leading-[2.5rem] md:leading-[3.5rem]">
                         Kickstart, Scale, and Theive Faster with <span className="text-rose-700">TechDev</span></h1>

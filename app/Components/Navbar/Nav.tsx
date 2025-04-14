@@ -35,23 +35,23 @@ const Nav = ({openNav}:Props) => {
                 <div className="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center flex-col">
                     <GrTechnology className="w-6 h-6 text-white" />
                 </div>
-                <h1 className="text-xl hidden sm:block md:text-2xl text-blue-800 font-bold">TechDev</h1>
+                <h1 className="text-xl  md:text-2xl text-blue-800 font-bold">TechDev</h1>
                 {/* NavLinks */}
-                <div className="hidden lg:flex items-center space-x-10">
+                <div className="hidden lg:flex items-center space-x-10 mx-3">
                     {navLinks.map((link) =>{
                         return (
-                        <Link href={link.url} 
+                        <a href={link.url} 
                             key={link.id} 
                             className="text-black hover:text-rose-500 font-semibol transition-all duration-200">
                             <p>{link.label}</p>
-                        </Link> 
+                        </a> 
                     );
                         
                     })}
                 </div>
                 {/* button */}
-                <div className="flex items-center space-x-4">
-                    <a href="#_" className="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none">
+                <div className="flex items-center space-x-6 sm:space-x-12 ">
+                    <a href="#_" className="box-border relative z-30 inline-flex items-center justify-center w-auto px-3 py-1.5 sm:px-4 sm:py-2 overflow-hidden  text-xs sm:text-sm font-bold text-white transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none">
                     <span className="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
                     <span className="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
                     <span className="relative z-20 flex items-center text-sm">

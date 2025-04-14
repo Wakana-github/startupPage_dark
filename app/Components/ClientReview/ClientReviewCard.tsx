@@ -38,7 +38,6 @@ const ClientReviewCard = ({image, name, rating}:Props) => {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima distinctio veritatis hic nostrum accusantium. Vel consectetur possimus quam esse nisi. 
             </p>
         </div>
-        
     </div>
   )
 }

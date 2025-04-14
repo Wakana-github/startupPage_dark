@@ -3,7 +3,7 @@ import ClientReviewCard from './ClientReviewCard'
 
 const ClientReview = () => {
   return (
-    <div className="pt-16 pb-16 bg-gray-100">
+    <div  id="clientReview" className="pt-16 pb-16 bg-gray-100">
         {/* Heading */}
         <h1 className="text-center trxt-2xl text-blue-950 font-bold">
             What Our Happy User Says

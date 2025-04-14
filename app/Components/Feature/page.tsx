@@ -8,7 +8,7 @@ import { MdAccessAlarm, MdOutlineTouchApp } from 'react-icons/md'
 
 const Feature = () => {
   return (
-    <div className="pt-16 pb-16 bg-gray-100">
+    <div id="feature" className="pt-16 pb-16 bg-gray-100">
         <div>
             <h1 className="text-center text-2xl text-blue-950 font-bold">
                 Key Features Of The Product

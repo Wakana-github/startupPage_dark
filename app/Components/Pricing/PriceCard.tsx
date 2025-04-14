@@ -27,8 +27,6 @@ const PriceCard = ({price, time}: Props) => {
                 <span className="relative text-white">Update Now</span>
             </a>
         </div>
-
-
     </div>
   )
 }

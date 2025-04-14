@@ -1,12 +1,12 @@
 import React from 'react'
-import BoxText from '../../Helper/BoxText'
+import BoxText from '../Helper/BoxText'
 import { FaBriefcase, FaChess, FaRocket, FaShoppingCart } from 'react-icons/fa'
 import { MdOutlineDesignServices } from 'react-icons/md'
 import { IoColorPaletteOutline } from 'react-icons/io5'
 
 const Services = () => {
   return (
-    <div className="pt-16 pb-16">
+    <div id="services" className="pt-16 pb-16">
         <div className="w-[80%] mx-auto">
             <BoxText>Our Servises</BoxText>
             {/* heading */}

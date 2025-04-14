@@ -3,7 +3,7 @@ import React from 'react'
 const Btn_green = () => {
   return (
     <div>    
-        <a href="#_" className="relative px-10 py-3 font-medium text-white transition duration-300 bg-green-400 rounded-md hover:bg-green-600 ease">
+        <a href="#_" className="relative mt-3 px-10 py-3 font-medium text-white transition duration-300 bg-green-400 rounded-md hover:bg-green-600 ease">
             <span className="absolute bottom-0 left-0 h-full -ml-2">
               <svg viewBox="0 0 487 487" className="w-auto h-full opacity-100 object-stretch" xmlns="http://www.w3.org/2000/svg"><path d="M0 .3c67 2.1 134.1 4.3 186.3 37 52.2 32.7 89.6 95.8 112.8 150.6 23.2 54.8 32.3 101.4 61.2 149.9 28.9 48.4 77.7 98.8 126.4 149.2H0V.3z" fill="#FFF" fillRule="nonzero" fillOpacity=".1"></path></svg>
             </span>

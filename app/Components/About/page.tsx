@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
-import BoxText from '../../Helper/BoxText'
+import BoxText from '../Helper/BoxText'
 
 const About = () => {
   return (
-    <div className="pt-16 pb-16">
+    <div id="about" className="pt-16 pb-16">
         <div className="w-[80%] mx-auto grid grid-cols1 lg:grid-cols-2 gap-10 items-center">
             {/* Image content */}
             <div data-aos="zoom-in" data-aos-anchor-placement="top-center" >

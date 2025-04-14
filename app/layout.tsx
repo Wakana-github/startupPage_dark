@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Rethink_Sans } from "next/font/google";
 import "./globals.css";
-import ResponsiveNav from "./Components/Home/Navbar/ResponsiveNav";
-import Footer from "./Components/Home/Footer/Footer";
+import ResponsiveNav from "./Components/Navbar/ResponsiveNav";
+import Footer from "./Components/Footer/page";
 import ScrollToTop from "./Components/Helper/ScrollToTop";
 
 const font = Rethink_Sans({
